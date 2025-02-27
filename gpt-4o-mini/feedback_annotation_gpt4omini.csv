@@ -1,0 +1,70 @@
+id_feedback,is_correct,line_number,code_line,hint,annotation
+0,FALSE,5.0,"print('A=',area)",The output should format the area to four decimal places. Use formatted string or format method.,AC
+1,FALSE,5.0,print('A=' + str(area),The print statement is missing a closing parenthesis.,AC
+1,FALSE,4.0,print('A=' + str(area),The output should be formatted to four decimal places.,AC
+2,FALSE,6.0,print('A=' + str(area)),The output should be formatted to four decimal places. Use format specifiers or f-strings to achieve this.,AC
+3,FALSE,5.0,"print('A=' + str(round(area,4)))","Use formatted string output to ensure four decimal places, e.g., print(f'A={area:.4f}') instead of rounding.",AC
+4,FALSE,5.0,"print('A=' + str(round(area,5)))","The area should be printed with four decimal places, not five. Use format specifiers to ensure it always shows four decimal places.",AC
+5,FALSE,5.0,print('A={0:0.4f}'.format(area))),There is an extra closing parenthesis at the end of the print statement.,AC
+6,TRUE,,,,Not applicable
+7,FALSE,5.0,"print('A=',area)",The output should format the area to four decimal places. Use formatted strings or the format method.,AC
+8,FALSE,5.0,"print('A=""{:.4f}'.format(area))",The output format is incorrect. It should be 'print(f'A={area:.4f}')' without quotes around the area value.,ALO
+9,FALSE,10.0,"camisas.sort(key=lambda x: (x['cor'], -ord(x['tamanho']), x['nome']))",The sorting by size is incorrect. Use a mapping for sizes to sort them in descending order.,FP
+9,FALSE,15.0,print(),A blank line should not be printed after the last test case. Use a flag to manage this.,AC
+10,FALSE,8.0,"camisas.sort(key=lambda x: (x[1], x[2], x[0]))","The sorting for size should be in descending order. Change it to (x[1], -ord(x[2]), x[0]) or use a custom sorting function.",AC
+10,FALSE,12.0,print(),"This will print an extra blank line after the last test case. You should only print a blank line between test cases, not after the last one.",AC
+11,FALSE,3.0,"camisetas_ordenadas = sorted(camisetas, key=lambda c: (c['cor_logo'], c['tamanho'], c['nome']))",The size should be sorted in descending order. Modify the sorting key to account for size.,AC
+11,FALSE,20.0,print(),This prints a blank line after every test case. You need to manage blank lines to only appear between test cases.,AC
+12,FALSE,3.0,"camisetas_ordenadas = sorted(camisetas, key=lambda c: (c['cor_logo'], c['tamanho'], c['nome']))","The sorting for 'tamanho' (size) should be in descending order, not ascending.",AC
+12,FALSE,20.0,print(),"A blank line should only be printed between test cases, not after the last one.",AC
+13,FALSE,3.0,return float('inf'),Returning float('inf') for unknown sizes is unnecessary since the input is guaranteed to be valid.,AC
+13,FALSE,30.0,print(),This print statement will add an extra blank line after the last test case. Consider adding a condition to avoid this.,AC
+14,FALSE,43.0,print(camiseta['cor_logo'] + ' ' + camiseta['tamanho'] + ' ' + camiseta['nome']),"You need to add logic to print a blank line between test cases, but not after the last test case.",AC
+15,FALSE,43.0,#print(),Uncomment the print statement to ensure a blank line is printed between test cases.,ALO
+16,FALSE,43.0,print(),This will print an extra blank line after the last test case. Consider adding a condition to avoid printing a blank line after the final output.,AC
+17,FALSE,43.0,print(''),The blank line should not be printed after the last test case. Consider adding a condition to check if there are more test cases to process.,Not applicable
+18,FALSE,15.0,"camisas.sort(key=lambda x: (x['cor'], -ord(x['tamanho']), x['nome']))",The sorting for size should use a custom order instead of -ord(). Use a mapping for sizes to sort them correctly.,Not applicable
+19,FALSE,1.0,x = (input()),The input values are read as strings. You need to convert them to integers using int().,AC
+19,FALSE,2.0,y = (input()),The input values are read as strings. You need to convert them to integers using int().,AC
+19,FALSE,3.0,soma = x + y,"You need to sum the integer values of x and y, not the string values.",AC
+19,FALSE,4.0,print(soma),The output format is incorrect. It should be 'SOMA = <value>' with proper formatting.,AC
+20,FALSE,4.0,"print(f""SOMA = {SOMA}"")",The output format should have spaces before and after the equal sign.,Not applicable
+21,FALSE,4.0,"print('SOMA =', SOMA)",The output format is incorrect. It should be 'SOMA = SOMA_VALUE' with spaces around the equal sign.,Not applicable
+22,FALSE,4.0,"print('SOMA = ', soma",The print statement is missing a closing parenthesis.,AC
+22,FALSE,4.0,"print('SOMA = ', soma",The output format should not have a space after the equal sign.,AC
+23,FALSE,4.0,"print('SOMA =', soma)",The output format is incorrect. There should be a space before and after the equal sign.,Not applicable
+24,FALSE,4.0,"print('SOMA =',SOMA)",The output format is incorrect. Ensure there is exactly one space before and after the equal sign.,Not applicable
+25,TRUE,,,,Not applicable
+26,TRUE,,,,Not applicable
+27,TRUE,,,,Not applicable
+28,TRUE,,,,Not applicable
+29,FALSE,4.0,print(area),The output format is incorrect. You need to print 'A=' followed by the area value formatted to four decimal places.,AC
+30,TRUE,,,,Not applicable
+31,FALSE,2.0,limiteSaldo = saldo,The variable 'saldo' is not defined. It should be initialized with the starting balance 'S'.,AC
+31,FALSE,5.0,if S < limiteSaldo:,The indentation of this line is incorrect. It should be aligned with the for loop.,AC
+32,FALSE,2.0,limiteSaldo = saldo,The variable 'saldo' is not defined. It should be initialized to 'S'.,AC
+32,FALSE,4.0,if S < limiteSaldo:,The initial balance 'S' should also be considered when determining the lowest balance.,FP
+33,FALSE,2.0,limiteSaldo = S,The variable 'limiteSaldo' should be initialized to a value that allows it to track the lowest balance after processing all movements.,Not applicable
+33,FALSE,5.0,if S < limiteSaldo:,"The condition should check if the current balance 'S' is less than the previously recorded lowest balance, but 'limiteSaldo' should be initialized correctly first.",Not applicable
+34,TRUE,,,,Not applicable
+35,TRUE,,,,Not applicable
+36,FALSE,3.0,for c in range(N),A colon (:) is missing at the end of the for loop declaration.,AC
+36,FALSE,5.0,if S < limiteSaldo:,The variable 'limiteSaldo' should be initialized to a value that allows tracking the lowest balance correctly.,FP
+37,TRUE,,,,Not applicable
+38,TRUE,,,,Not applicable
+39,TRUE,,,,Not applicable
+40,TRUE,,,,Not applicable
+41,FALSE,6.0,if(vogal in entrada for vogal in 'aeiou'):,This line is incorrectly structured. You need to extract the vowels from 'entrada' and check if they form a palindrome.,AC
+41,FALSE,3.0,if len(entrada) > maximo:,"The problem states that the input will contain at least one vowel, so this check is unnecessary.",AC
+41,FALSE,4.0,entrada = entrada.lower(),"This line is fine, but it should be noted that the input is already specified to be in lowercase.",AC
+41,FALSE,7.0,print('S'),This output is incorrect because it does not check if the sequence of vowels is a palindrome.,AIO
+41,FALSE,8.0,print('N'),This output is incorrect because it does not check if the sequence of vowels is a palindrome.,AIO
+42,FALSE,3.0,if(vogal in entrada for vogal in 'aeiou'):,This line does not correctly check for the presence of vowels in the input string.,AC
+42,FALSE,4.0,print('S'),"You need to check if the sequence of vowels is a palindrome, not just if any vowel exists.",AIO
+42,FALSE,5.0,print('N'),"This line will execute if the previous condition is true, which is incorrect. You need to implement the palindrome check.",MS
+43,FALSE,3.0,if(vogal in entrada for vogal in 'aeiou'):,This line uses a generator expression incorrectly. You need to extract the vowels from 'entrada' first.,AC
+43,FALSE,5.0,print('S'),"You need to check if the extracted vowels form a palindrome, not just if there are vowels present.",AIO
+43,FALSE,6.0,print('N'),This output is incorrect if the sequence of vowels is not checked for being a palindrome.,AIO
+44,FALSE,3.0,if any(vogal in entrada for vogal in 'aeiou'):,"This line only checks for the presence of vowels, not if the sequence of vowels is a palindrome.",AC
+44,FALSE,2.0,if len(entrada) > maximo:,The length check should be done before processing the input string.,MS
+44,FALSE,4.0,print('S'),"This should only print 'S' if the sequence of vowels is a palindrome, not just if there are vowels.",AIO
